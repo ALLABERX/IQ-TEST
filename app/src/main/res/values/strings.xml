@@ -22,4 +22,9 @@
     <string name="string_dialog_rate_app">Как вы оцениваете это приложение?</string>
     <string name="string_dialog_thank_you">Спасибо за оценку, ваше мнение очень важно для нас</string>
 
+    <!-- AgeFragment -->
+    <string name="string_enter_your_age">Введите Ваш возраст</string>
+    <string name="string_your_age">Ваш возраст</string>
+
+
 </resources>

@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment;
 
 import com.allaberx.test.iq.R;
 import com.allaberx.test.iq.activities.SwitchFragment;
+import com.allaberx.test.iq.presenters.age.AgeFragment;
 
 public class HomeFragment extends Fragment implements HomeView {
 
@@ -31,6 +32,7 @@ public class HomeFragment extends Fragment implements HomeView {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         homePagePresenter = new HomePresenter(this);
         initiationViewElements(view);
+        setOnClickListener();
         return view;
     }
 
@@ -39,7 +41,6 @@ public class HomeFragment extends Fragment implements HomeView {
         buttonExit = view.findViewById(R.id.buttonExit);
         textViewStartTest = view.findViewById(R.id.textViewStartTest);
         textViewRateApp = view.findViewById(R.id.textViewRateApp);
-        setOnClickListener();
     }
 
     @Override
@@ -56,7 +57,7 @@ public class HomeFragment extends Fragment implements HomeView {
                 homePagePresenter.showExitDialog(getActivity());
                 break;
             case R.id.textViewStartTest:
-//                switchFragment.setFragment(TestFragment.newInstance());
+                switchFragment.setFragment(AgeFragment.newInstance());
                 break;
             case R.id.textViewRateApp:
                 homePagePresenter.showRateAppDialog(getActivity());
