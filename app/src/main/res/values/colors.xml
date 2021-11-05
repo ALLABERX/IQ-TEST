@@ -8,7 +8,12 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-
+    <!-- Common -->
     <color name="color_white">#FFFFFFFF</color>
     <color name="color_black">#FF000000</color>
+    <color name="color_white_transparent_percent_100">#FFFFFF</color>
+    <color name="color_white_transparent_percent_75">#BFFFFFFF</color>
+    <color name="color_white_transparent_percent_60">#99FFFFFF</color>
+    <color name="color_white_transparent_percent_20">#33FFFFFF</color>
+    <color name="color_white_transparent_percent_5">#0DFFFFFF</color>
 </resources>

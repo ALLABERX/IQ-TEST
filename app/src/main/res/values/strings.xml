@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">IQ-TEST</string>
+
+    <!-- Common -->
+    <string name="string_exit">Выход</string>
+    <string name="string_send">Отправить</string>
+    <string name="string_sent_by">Отправлено</string>
+    <string name="string_cancel">Отмена</string>
+    <string name="string_ok">Да</string>
+    <string name="string_next">Далее</string>
+
+    <!-- HomeFragment -->
+    <string name="string_start_test">Начать тестирование</string>
+    <string name="string_rate_app">Оценить приложение</string>
+
+    <!-- CommonDialog -->
+    <string name="string_dialog_head">Подтверждение</string>
+    <string name="string_dialog_body_exit">Вы действительно хотите выйти?</string>
+    <string name="string_dialog_body_home">Вы действительно хотите прервать тест?</string>
+
+    <!-- RateAppDialog -->
+    <string name="string_dialog_rate_app">Как вы оцениваете это приложение?</string>
+    <string name="string_dialog_thank_you">Спасибо за оценку, ваше мнение очень важно для нас</string>
+
 </resources>

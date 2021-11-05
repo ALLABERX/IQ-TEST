@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_button_height">56dp</dimen>
+
+    <dimen name="dimen_corners_radius">16dp</dimen>
+    <dimen name="dimen_padding">16dp</dimen>
+    <dimen name="dimen_padding_min">8dp</dimen>
+    <dimen name="dimen_margin">16dp</dimen>
+    <dimen name="dimen_margin_min">8dp</dimen>
+</resources>
