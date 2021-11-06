@@ -16,4 +16,13 @@
     <color name="color_white_transparent_percent_60">#99FFFFFF</color>
     <color name="color_white_transparent_percent_20">#33FFFFFF</color>
     <color name="color_white_transparent_percent_5">#0DFFFFFF</color>
+
+
+    <!-- button_answer -->
+    <color name="color_button_answer_radius">#7B61FF</color>
+
+    <!-- timer -->
+    <color name="color_timer_frame">#0DFFFFFF</color>
+    <color name="color_timer_much">#FFFFFF</color>
+    <color name="color_timer_low">#FF4E4E</color>
 </resources>

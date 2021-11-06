@@ -26,5 +26,10 @@
     <string name="string_enter_your_age">Введите Ваш возраст</string>
     <string name="string_your_age">Ваш возраст</string>
 
+    <!-- TestFragment -->
+    <string name="string_time_is_over">Упс, Ваше время истекло</string>
+    <string name="string_try_again">Попробуйте думать немного быстрее</string>
+    <string name="string_start_over">Начать заново</string>
+
 
 </resources>

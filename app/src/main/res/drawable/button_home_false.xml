@@ -1,0 +1,13 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/dimen_button_height"
+    android:height="@dimen/dimen_button_width"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+  <path
+      android:pathData="M16,0L32,0A16,16 0,0 1,48 16L48,32A16,16 0,0 1,32 48L16,48A16,16 0,0 1,0 32L0,16A16,16 0,0 1,16 0z"
+      android:fillColor="@color/color_white_transparent_percent_5"
+      android:fillAlpha="0.2"/>
+  <path
+      android:pathData="M33,31.7327C33,31.9979 32.8946,32.2523 32.7071,32.4398C32.5196,32.6273 32.2652,32.7327 32,32.7327H16C15.7348,32.7327 15.4804,32.6273 15.2929,32.4398C15.1054,32.2523 15,31.9979 15,31.7327V21.2227C14.9999,21.0703 15.0346,20.9199 15.1015,20.783C15.1684,20.6461 15.2657,20.5263 15.386,20.4327L23.386,14.2107C23.5615,14.0741 23.7776,14 24,14C24.2224,14 24.4385,14.0741 24.614,14.2107L32.614,20.4327C32.7343,20.5263 32.8316,20.6461 32.8985,20.783C32.9654,20.9199 33.0001,21.0703 33,21.2227V31.7327ZM31,30.7327V21.7107L24,16.2667L17,21.7107V30.7327H31Z"
+      android:fillColor="@color/color_white_transparent_percent_100"/>
+</vector>
