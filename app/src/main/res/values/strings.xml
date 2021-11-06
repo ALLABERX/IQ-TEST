@@ -31,5 +31,13 @@
     <string name="string_try_again">Попробуйте думать немного быстрее</string>
     <string name="string_start_over">Начать заново</string>
 
+    <!-- ResultFragment -->
+    <string name="string_your_iq">Ваш IQ</string>
+    <string name="string_your_iq2">51</string>
+    <string name="string_your_iq3">У Вас легкая степень слабоумия</string>
+    <string name="string_view_results">Посмотреть результаты</string>
+    <string name="string_share">Поделиться</string>
 
+    <!-- QuestionAdapter -->
+    <string name="string_question">Вопрос</string>
 </resources>

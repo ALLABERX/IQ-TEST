@@ -15,7 +15,9 @@
     <color name="color_white_transparent_percent_75">#BFFFFFFF</color>
     <color name="color_white_transparent_percent_60">#99FFFFFF</color>
     <color name="color_white_transparent_percent_20">#33FFFFFF</color>
+    <color name="color_white_transparent_percent_10">#1AFFFFFF</color>
     <color name="color_white_transparent_percent_5">#0DFFFFFF</color>
+    <color name="color_white_transparent_percent_0">#00FFFFFF</color>
 
 
     <!-- button_answer -->

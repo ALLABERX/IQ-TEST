@@ -23,6 +23,7 @@ import com.allaberx.test.iq.activities.SwitchFragment;
 import com.allaberx.test.iq.models.Question;
 import com.allaberx.test.iq.presenters.age.AgeFragment;
 import com.allaberx.test.iq.presenters.home.HomeFragment;
+import com.allaberx.test.iq.presenters.result.ResultFragment;
 import com.allaberx.test.iq.tasks.MyTimerTask;
 
 import java.io.IOException;
@@ -238,7 +239,7 @@ public class TestFragment extends Fragment implements TestView {
     @Override
     public void finishTest() {
         timer.cancel();
-        switchFragment.setFragment(HomeFragment.newInstance());
+        switchFragment.setFragment(ResultFragment.newInstance());
     }
 
     @Override

@@ -41,7 +41,8 @@ public class TestPresenter extends BasePresenter {
     }
 
     public void selectedButton(ImageButton imageButton, int selectedAnswer) {
-        questionDAO.setSelectedAnswer(questionPosition, selectedAnswer);
+        int positionInDb = questionPosition - 1;
+        questionDAO.setSelectedAnswer(positionInDb, selectedAnswer);
         view.resetButtonsState();
         view.setButtonState(imageButton);
         view.setEnabledButtonNext(true);
