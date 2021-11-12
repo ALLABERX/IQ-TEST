@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/dimen_button_width"
+    android:height="@dimen/dimen_button_height"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+  <path
+      android:pathData="M16,0L32,0A16,16 0,0 1,48 16L48,32A16,16 0,0 1,32 48L16,48A16,16 0,0 1,0 32L0,16A16,16 0,0 1,16 0z"
+      android:fillColor="@color/color_white_transparent_percent_20"
+      android:fillAlpha="0.2"/>
+  <path
+      android:pathData="M21.2069,17L14,24M14,24L21.2069,31M14,24H33"
+      android:strokeWidth="2"
+      android:strokeColor="@color/color_white_transparent_percent_100"/>
+</vector>

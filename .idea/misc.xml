@@ -22,6 +22,9 @@
         <entry key="app/src/main/res/drawable/button_answer.xml" value="0.3490740740740741" />
         <entry key="app/src/main/res/drawable/button_answer_false.xml" value="0.3490740740740741" />
         <entry key="app/src/main/res/drawable/button_answer_true.xml" value="0.3490740740740741" />
+        <entry key="app/src/main/res/drawable/button_back.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/button_back_false.xml" value="0.34629629629629627" />
+        <entry key="app/src/main/res/drawable/button_back_true.xml" value="0.34629629629629627" />
         <entry key="app/src/main/res/drawable/button_close.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/button_close_false.xml" value="0.30925925925925923" />
         <entry key="app/src/main/res/drawable/button_close_true.xml" value="0.30925925925925923" />
@@ -31,11 +34,13 @@
         <entry key="app/src/main/res/drawable/button_home_true.xml" value="0.3490740740740741" />
         <entry key="app/src/main/res/drawable/button_question.xml" value="0.30925925925925923" />
         <entry key="app/src/main/res/drawable/button_share.xml" value="0.36574074074074076" />
+        <entry key="app/src/main/res/drawable/ic_back.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/ic_next.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/more_details.xml" value="0.30925925925925923" />
         <entry key="app/src/main/res/drawable/time_much.xml" value="0.3490740740740741" />
         <entry key="app/src/main/res/drawable/timer_frame.xml" value="0.3490740740740741" />
         <entry key="app/src/main/res/drawable/timer_low.xml" value="0.3490740740740741" />
-        <entry key="app/src/main/res/layout/fragment_question.xml" value="0.35025641025641024" />
+        <entry key="app/src/main/res/layout/fragment_question.xml" value="0.14613180515759314" />
         <entry key="app/src/main/res/layout/fragment_questions.xml" value="0.35025641025641024" />
         <entry key="app/src/main/res/layout/fragment_result.xml" value="0.35025641025641024" />
         <entry key="app/src/main/res/layout/fragment_test.xml" value="0.2" />
