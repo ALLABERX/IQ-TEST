@@ -2,7 +2,6 @@ package com.allaberx.test.iq.presenters.test;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,13 +20,10 @@ import androidx.fragment.app.Fragment;
 import com.allaberx.test.iq.R;
 import com.allaberx.test.iq.activities.SwitchFragment;
 import com.allaberx.test.iq.models.Question;
-import com.allaberx.test.iq.presenters.age.AgeFragment;
 import com.allaberx.test.iq.presenters.home.HomeFragment;
 import com.allaberx.test.iq.presenters.result.ResultFragment;
 import com.allaberx.test.iq.tasks.MyTimerTask;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.Timer;
 
 public class TestFragment extends Fragment implements TestView {
@@ -71,7 +67,7 @@ public class TestFragment extends Fragment implements TestView {
 
     @Override
     public void initiationViewElements(View view) {
-        imageButtonHome = view.findViewById(R.id.imageButtonHome);
+        imageButtonHome = view.findViewById(R.id.imageViewHome);
         textViewQuestionCount = view.findViewById(R.id.textViewQuestionCount);
         imageViewTimer = view.findViewById(R.id.imageViewTimer);
         textViewTimer = view.findViewById(R.id.textViewTimer);
@@ -108,7 +104,7 @@ public class TestFragment extends Fragment implements TestView {
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.imageButtonHome:
+            case R.id.imageViewHome:
                 testPresenter.showHomeDialog(getActivity());
                 break;
             case R.id.imageButtonAnswer1:

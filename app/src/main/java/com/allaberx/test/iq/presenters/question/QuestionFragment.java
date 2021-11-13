@@ -10,7 +10,6 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -69,7 +68,7 @@ public class QuestionFragment extends Fragment implements QuestionView {
         Bundle bundle = this.getArguments();
         int position = bundle.getInt("position", 0);
 
-        imageButtonHome = view.findViewById(R.id.imageButtonHome);
+        imageButtonHome = view.findViewById(R.id.imageViewHome);
         imageButtonNext = view.findViewById(R.id.imageButtonNext);
         imageButtonPrevious  = view.findViewById(R.id.imageButtonPrevious);
 
@@ -110,7 +109,7 @@ public class QuestionFragment extends Fragment implements QuestionView {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.imageButtonHome:
+            case R.id.imageViewHome:
                 switchFragment.setFragment(QuestionsFragment.newInstance());
                 break;
             case R.id.imageButtonNext:

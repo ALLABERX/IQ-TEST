@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,6 +21,7 @@ public class ResultFragment extends Fragment implements ResultView {
     SwitchFragment switchFragment;
     ResultPresenter resultPresenter;
 
+    ImageView imageViewHome;
     Button buttonViewResults;
 
     @Nullable
@@ -34,17 +36,22 @@ public class ResultFragment extends Fragment implements ResultView {
 
     @Override
     public void initiationViewElements(View view) {
+        imageViewHome = view.findViewById(R.id.imageViewHome);
         buttonViewResults = view.findViewById(R.id.buttonViewResults);
     }
 
     @Override
     public void setOnClickListener() {
+        imageViewHome.setOnClickListener(this);
         buttonViewResults.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.imageViewHome:
+                resultPresenter.showHomeDialog(getActivity());
+                break;
             case R.id.buttonViewResults:
                 switchFragment.setFragment(QuestionsFragment.newInstance());
                 break;

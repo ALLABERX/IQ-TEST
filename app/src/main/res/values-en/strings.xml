@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">IQ-TEST</string>
+
+    <!-- Common -->
+    <string name="string_exit">Exit</string>
+    <string name="string_send">Send</string>
+    <string name="string_sent_by">Sent by</string>
+    <string name="string_cancel">Cancel</string>
+    <string name="string_ok">Yes</string>
+    <string name="string_next">Further</string> <!--Не уверен-->
+
+    <!-- HomeFragment -->
+    <string name="string_start_test">Start testing</string>
+    <string name="string_rate_app">Rate app</string>
+
+    <!-- CommonDialog -->
+    <string name="string_dialog_head">Confirmation</string>
+    <string name="string_dialog_body_exit">Do you really want to leave?</string>
+    <string name="string_dialog_body_home">Are you sure you want to abort the test?</string>
+
+    <!-- RateAppDialog -->
+    <string name="string_dialog_rate_app">How do you rate this app?</string>
+    <string name="string_dialog_thank_you">Thank you for rating, your feedback is very important to us.</string>
+
+    <!-- SwitchLanguageDialog -->
+    <string name="string_dialog_choose_language">Choose language</string>
+    <string name="string_dialog_apply">Apply</string>
+
+    <!-- AgeFragment -->
+    <string name="string_enter_your_age">Enter your age</string>
+    <string name="string_your_age">Your age</string>
+
+    <!-- TestFragment -->
+    <string name="string_time_is_over">Oops your time is up</string>
+    <string name="string_try_again">Try to think a little faster</string>
+    <string name="string_start_over">Start over</string>
+
+    <!-- ResultFragment -->
+    <string name="string_your_iq">Your IQ</string>
+    <string name="string_your_iq2">51</string>
+    <string name="string_your_iq3">You have mild dementia</string>
+    <string name="string_view_results">View Results</string>
+    <string name="string_share">Share this</string>
+
+    <!-- QuestionAdapter -->
+    <string name="string_question">Question</string>
+</resources>

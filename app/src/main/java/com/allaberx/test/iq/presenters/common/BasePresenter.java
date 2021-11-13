@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.allaberx.test.iq.dialogs.CommonDialog;
 import com.allaberx.test.iq.dialogs.RateAppDialog;
+import com.allaberx.test.iq.dialogs.SwitchLanguageDialog;
 
 public class BasePresenter {
     public void showExitDialog(FragmentActivity fragmentActivity) {
@@ -35,5 +36,12 @@ public class BasePresenter {
         FragmentManager manager = fragmentActivity.getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
         rateAppDialog.show(transaction, "RateAppDialog");
+    }
+
+    public void showSwitchLanguageDialog(FragmentActivity fragmentActivity) {
+        SwitchLanguageDialog switchLanguageDialog = new SwitchLanguageDialog();
+        FragmentManager manager = fragmentActivity.getSupportFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+        switchLanguageDialog.show(transaction, "SwitchLanguageDialog");
     }
 }

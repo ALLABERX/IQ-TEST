@@ -31,23 +31,12 @@
             android:textColor="@color/color_black"
             android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/textViewRateAppTy"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dimen_margin_min"
-            android:layout_marginRight="@dimen/dimen_margin_min"
-            android:fontFamily="@font/roboto_regular"
-            android:text="@string/string_dialog_thank_you"
-            android:textSize="16sp"
-            android:visibility="invisible" />
-
         <RatingBar
             android:id="@+id/ratingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/dimen_margin_min"
+            android:layout_marginTop="@dimen/dimen_margin"
             android:numStars="5"
             android:stepSize="1"
             tools:ignore="SpeakableTextPresentCheck" />

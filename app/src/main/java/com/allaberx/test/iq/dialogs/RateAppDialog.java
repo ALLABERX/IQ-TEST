@@ -23,7 +23,6 @@ import com.allaberx.test.iq.R;
 public class RateAppDialog extends DialogFragment implements View.OnClickListener, RatingBar.OnRatingBarChangeListener {
 
     RatingBar ratingBar;
-    TextView textViewRateAppTy;
     Button buttonSend;
 
     @Override
@@ -38,7 +37,6 @@ public class RateAppDialog extends DialogFragment implements View.OnClickListene
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         LayoutInflater inflater = getActivity().getLayoutInflater();
         View view = inflater.inflate(R.layout.dialog_rate_app, null);
-        textViewRateAppTy = view.findViewById(R.id.textViewRateAppTy);
         buttonSend = view.findViewById(R.id.buttonSend);
         ratingBar = view.findViewById(R.id.ratingBar);
         view.findViewById(R.id.buttonSend).setOnClickListener(this);
@@ -75,17 +73,15 @@ public class RateAppDialog extends DialogFragment implements View.OnClickListene
     }
 
     private void showToast() {
-        Toast.makeText(getActivity(), R.string.string_sent_by, Toast.LENGTH_LONG).show();
+        Toast.makeText(getActivity(), R.string.string_dialog_thank_you, Toast.LENGTH_LONG).show();
     }
 
     @Override
     public void onRatingChanged(RatingBar ratingBar, float rating, boolean b) {
-        if (rating < 1.0f) {
-            textViewRateAppTy.setVisibility(View.INVISIBLE);
+        if (rating < 1.0f)
             buttonSend.setEnabled(false);
-        } else {
-            textViewRateAppTy.setVisibility(View.VISIBLE);
+        else
             buttonSend.setEnabled(true);
-        }
+
     }
 }
