@@ -1,6 +1,7 @@
 package com.allaberx.test.iq.presenters.result;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,12 +24,13 @@ public class ResultFragment extends Fragment implements ResultView {
 
     ImageView imageViewHome;
     Button buttonViewResults;
+    Button buttonShare;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_result, container, false);
-        resultPresenter = new ResultPresenter(this);
+        resultPresenter = new ResultPresenter(this, getActivity());
         initiationViewElements(view);
         setOnClickListener();
         return view;
@@ -38,12 +40,14 @@ public class ResultFragment extends Fragment implements ResultView {
     public void initiationViewElements(View view) {
         imageViewHome = view.findViewById(R.id.imageViewHome);
         buttonViewResults = view.findViewById(R.id.buttonViewResults);
+        buttonShare = view.findViewById(R.id.buttonShare);
     }
 
     @Override
     public void setOnClickListener() {
         imageViewHome.setOnClickListener(this);
         buttonViewResults.setOnClickListener(this);
+        buttonShare.setOnClickListener(this);
     }
 
     @Override
@@ -54,6 +58,9 @@ public class ResultFragment extends Fragment implements ResultView {
                 break;
             case R.id.buttonViewResults:
                 switchFragment.setFragment(QuestionsFragment.newInstance());
+                break;
+            case R.id.buttonShare:
+                resultPresenter.shareResult();
                 break;
         }
     }

@@ -105,7 +105,7 @@ public class TestFragment extends Fragment implements TestView {
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.imageViewHome:
-                testPresenter.showHomeDialog(getActivity());
+                testPresenter.showHomeTestDialog(getActivity());
                 break;
             case R.id.imageButtonAnswer1:
                 testPresenter.selectedButton(imageButtonAnswer1, 1);

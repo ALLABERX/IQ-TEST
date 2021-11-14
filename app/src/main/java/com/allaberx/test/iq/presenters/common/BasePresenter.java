@@ -21,14 +21,22 @@ public class BasePresenter {
         commonDialog.show(transaction, "ExitDialog");
     }
 
+    public void showHomeTestDialog(FragmentActivity fragmentActivity) {
+        createCommonDialog(fragmentActivity, "test");
+    }
+
     public void showHomeDialog(FragmentActivity fragmentActivity) {
+        createCommonDialog(fragmentActivity, "home");
+    }
+
+    private void createCommonDialog(FragmentActivity fragmentActivity, String type) {
         CommonDialog commonDialog = new CommonDialog();
         FragmentManager manager = fragmentActivity.getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
         Bundle bundle = new Bundle();
-        bundle.putString("dialogType", "home");
+        bundle.putString("dialogType", type);
         commonDialog.setArguments(bundle);
-        commonDialog.show(transaction, "HomeDialog");
+        commonDialog.show(transaction, "CommonDialog");
     }
 
     public void showRateAppDialog(FragmentActivity fragmentActivity) {

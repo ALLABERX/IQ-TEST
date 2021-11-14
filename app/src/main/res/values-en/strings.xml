@@ -16,7 +16,8 @@
     <!-- CommonDialog -->
     <string name="string_dialog_head">Confirmation</string>
     <string name="string_dialog_body_exit">Do you really want to leave?</string>
-    <string name="string_dialog_body_home">Are you sure you want to abort the test?</string>
+    <string name="string_dialog_body_test_to_home">Are you sure you want to abort the test?</string>
+    <string name="string_dialog_body_home">Do you really want to go to the main screen?</string>
 
     <!-- RateAppDialog -->
     <string name="string_dialog_rate_app">How do you rate this app?</string>

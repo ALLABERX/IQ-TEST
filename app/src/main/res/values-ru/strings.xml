@@ -16,7 +16,8 @@
     <!-- CommonDialog -->
     <string name="string_dialog_head">Подтверждение</string>
     <string name="string_dialog_body_exit">Вы действительно хотите выйти?</string>
-    <string name="string_dialog_body_home">Вы действительно хотите прервать тест?</string>
+    <string name="string_dialog_body_test_to_home">Вы действительно хотите прервать тест?</string>
+    <string name="string_dialog_body_home">Вы действительно хотите перейти в главное меню?</string>
 
     <!-- RateAppDialog -->
     <string name="string_dialog_rate_app">Как вы оцениваете это приложение?</string>

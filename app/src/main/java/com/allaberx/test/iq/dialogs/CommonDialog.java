@@ -34,8 +34,11 @@ public class CommonDialog extends DialogFragment implements View.OnClickListener
             case "exit":
                 isExitDialogType(view);
                 break;
+            case "test":
+                isHomeDialogType(view, R.string.string_dialog_body_test_to_home);
+                break;
             case "home":
-                isHomeDialogType(view);
+                isHomeDialogType(view, R.string.string_dialog_body_home);
                 break;
         }
         view.findViewById(R.id.textViewCancel).setOnClickListener(this);
@@ -51,14 +54,13 @@ public class CommonDialog extends DialogFragment implements View.OnClickListener
         });
     }
 
-    private void isHomeDialogType(View view) {
+    private void isHomeDialogType(View view, int stringId) {
         TextView textView = view.findViewById(R.id.textViewDialogBody);
-        textView.setText(R.string.string_dialog_body_home);
+        textView.setText(stringId);
         view.findViewById(R.id.textViewOk).setOnClickListener(view1 -> {
             ((MainActivity) getActivity()).setFragment(HomeFragment.newInstance());
             getDialog().dismiss();
         });
-
     }
 
     @Override
